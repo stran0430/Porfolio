@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Steve Tran Portfolio</title>
+        <link rel ="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <h1><a href="./index.html">Steve Tran</a></h1>
+            <nav>
+                <!--Unordered list elements-->
+                <ul>
+                    <!--List item elements-->
+                    <li>
+                        <a href="#about-me">About Me</a>   
+                    </li>
+                    <li>
+                        <a href="#work">Work</a>   
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>   
+                    </li>
+                    <li>
+                        <a href="./resume.html">Resume</a>   
+                    </li>                    
+                </ul>
+            </nav>
+        </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roger Vacovsky</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
-    <header class="header">
-        <h1>Roger Vacovsky</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about-me">
-        <div class="section-detail">
-            <h2 class="section-title primary-border">About Me</h2>
-            <p>
-                Welcome to my page! <br /> <br />
-                I'm making my entry into the world of web development as I have found a passion for problem
-                solving on interesting projects through the use of code. <br /> <br />
-                I have been a leader in the nonprofit, service, and healthcare industries for over a decade and have
-                many years of database user experience that I bring to this new endeavor. <br /> <br />
-                In my spare time I like to read, listen to music, and play the piano. Thanks for visiting! <br />
-            </p>
-            <div class="profile-pic">
-                <img src="./assets/images/Headshot2022.JPG" alt="Roger Vacovsky">
+         <!-- hero/jumbotron -->
+         <section class="hero">        
+            <img class="image2" src="./assets/images/profile-pic.jpg" alt="profile"/>
+            <div>
+                <h2>Full Stack Developer</h2>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="work">
-        <div class="section-detail">
-            <h2 class="section-title primary-border">Work</h2>
-            <div class="work-container">
-                <div class="item-detail">
-                    <a href="https://rvacovsky.github.io/run-buddy/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/images/hero-bg.jpg" alt="Run Buddy">
-                       
-                    </a>
-                    <div class="bottom-left">Run Buddy<br>HTML/CSS</div>
+         <!-- About section -->
+         <section id="about-me" class="about">
+            <div class="flex-row">
+              <h2 class="section-title">About</h2> 
+            </div>
+            <div class="step-info">
+                <div class="vl-border1">
+            </div>
+                <div class="step-text">
+                    <p>
+                        My name is Steve Tran. I live in Atlanta, Georgia. I am a big foodie and love to travel.</br> I am currently pursuing a Bachelor in Psychology as well as attending Georgia Tech Full Stack bootcamp.
+
+                    </p>
                 </div>
-                <div class="item-detail">
-                    <a href="https://rvacovsky.github.io/Horiseon/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/images/horiseon.jpg" alt="Horiseon">
-                        <div class="bottom-left">Horiseon<br>HTML/CSS</div>
-                    </a>
+         </section>
+
+         <!-- Work section -->
+        <section id="work" class="about">
+            <div class="flex-row ">
+              <h2 class="section-title">Works</h2> 
+            </div>
+            <div class="step-info">
+                <div class="vl-border2">
                 </div>
-                <div class="item-detail">
-                    <a href="https://serendipbrity.github.io/Gators-Newsletter/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/images/Making a Difference Logo.jpg" alt="SCES Newsletter">
-                        <div class="bottom-left">SCES Newsletter<br>JavaScript/API</div>
-                    </a>
-                </div>
-                <div class="item-detail">
-                    <a href="https://pets-r-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/images/Hisscussions.JPG" alt="Hisscussions">
-                        <div class="bottom-left">Hisscussions<br>MVC</div>
-                </div>
-                <div class="item-detail">
-                    <a href="https://infinite-mesa-70815.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/images/crossplatforum.JPG" alt="Cross-Platforum">
-                        <div class="bottom-left">Cross Platforum<br>MERN</div>
+                <!--CSS grid of images-->
+                <div class="container">
+                   <div class="gallery">                       
+                    <figure class="gallery__item gallery__item--1">
+                        <a href="https://stran0430.github.io/Refactor-challenge-1/">
+                            <img src="./assets/images/screenshot-challenge-1.png" class="gallery__img" alt="Horiseon website">
+                            <figcaption>Horiseon</br>HTML CSS</figcaption>               
+                        </a>
+                        </figure>
+                        <figure class="gallery__item gallery__item--2">
+                            <a href="https://stran0430.github.io/prework-study-guide/">
+                              <img src="./assets/images/screenshot-prework.png" class="gallery__img" alt="prework-study-guide">
+                              <figcaption>Prework Study Guide</br>Git HTML CSS</figcaption>
+                            </a>
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="contact">
-        <div class="section-detail">
-            <h2 class="section-title primary-border">Contact</h2>
-            <p>
-                123 Main Street
-                <br />
-                Anytown, VA
-                <br />
-                55555
-                <br />
-                📱: (804) 555-1212
-                <br />
-                📧: <a href="mailto:rvacovsky@gmail.com">rvacovsky@gmail.com</a>
-            </p>
-        </div>
-    </section>
+         </section>
+               <!-- Contact me section -->
+               <section id="contact-me" class="about">
+                <div class="flex-row">
+                    <h2 class="section-title">Contact</h2> 
+                </div>
+            <div class="step-info">
+                <div class="vl-border3">
+                </div>
+                <div class="contact-info">
+                <ul>
+                    <!--List item elements-->
+                    <li>
+                        <a href="#number">678-111-1111</a>   
+                    </li>
+                    <li>
+                        <a href="#website.com">stevetran@website.com</a>   
+                    </li>
+                    <li>
+                        <a href="#githb">GitHub</a>   
+                    </li>                  
+                </ul>
+                </div>
+            </section>        
 </body>
-
-
-
 </html>
