@@ -15,4 +15,4 @@ To create a portfolio of work that showcase my skills and talents to employers l
 - Clicking the images of the application opens that deployed application
 - Includes a responsive layout that adapt to different viewpoints when resizing the page or viewing the page on various secreens and device
 
-[Deployed Application](https://stran0430.github.io/portfolio/)
+[Deployed Application](https://stran0430.github.io/Portfolio/)
