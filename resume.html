@@ -1,52 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Steve Tran Resume :resume</title>
-        <link rel ="stylesheet" href="./assets/style.css" />
-    </head>
-    <body>
-        <!--Header-->
-        <header>
-            <h1><a href="./index.html">Steve Tran</a></h1>
-            <nav>
-                <!--Unordered list elements-->
-                <ul>
-                    <!--List item elements-->
-                    <li>
-                        <a href="./index.html#about-me">About Me</a>   
-                    </li>
-                    <li>
-                        <a href="./index.html#work">Work</a>   
-                    </li>
-                    <li>
-                        <a href="./index.html#contact-me">Contact Me</a>   
-                    </li>
-                    <li>
-                        <a href="./resume.html">Resume</a>   
-                    </li>                    
-                </ul>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steve Tran - Creative Designer Based In US</title>
 
-        <section class="resume">
-            <h2>Resume</br></br></h2>
-            <p>
-                <h3>Qualifications:</br></br></h3>
-                Dedicated Full stack developer from Georgia Tech bootcamp. Experience with HTML, CSS & Javascript
-                </br></br>
-            </p>
-            <p>
-                <h3>Projects</br></br></h3>
-                <h4>Horiseon</br></h4>  
-                 Description : Built a webpage for Horiseon providing different stategies to become successful online. 
-                </br></br>
-            </p>
-            <p>
-                <h3>Technologies learned</br></br></h3>
-                CSS, HTML, Javascript, Visual Studio Code, GitHub</br></br> 
-            </p>
-        </section>
-    </body>
-    </html>
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="./index.html" class="logo">Steve Tran</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="index.html#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li>
+            <a href="index.html#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="./index.html#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li>
+            <a href="resume.html" class="navbar-link" data-nav-link>Resume</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <body>
+    <section class="hero" id="resume" aria-label="resume">
+      <style>
+        .hero{text-align:center;} </style>
+           <h2>Resume</br></br></h2>
+           <p>
+               <h3>Qualifications:</br></br></h3>
+               Dedicated Full stack developer from Georgia Tech bootcamp. Experience with HTML, CSS & Javascript
+               </br></br>
+           </p>
+           <p>
+               <h3>Projects</br></br></h3>
+               <h4>Horiseon</br></h4>
+                Description : Built a webpage for Horiseon providing different stategies to become successful online.
+               </br></br>
+           </p>
+           <p>
+               <h3>Technologies learned</br></br></h3>
+               CSS, HTML, Javascript, Visual Studio Code, GitHub</br></br>
+           </p>
+    </section>
+
+    >
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2022. All rights reserved by
+          <a href="#" class="copyright-link">stran0430.</a>
+        </p>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+  - custom js link
+-->
+    <script src="./assets/script.js" defer></script>
+
+    <!-- 
+  - ionicon link
+-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

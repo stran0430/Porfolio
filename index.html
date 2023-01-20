@@ -1,115 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Steve Tran Portfolio</title>
-        <link rel ="stylesheet" href="./assets/style.css" />
-    </head>
-    <body>
-        <!--Header-->
-        <header>
-            <h1><a href="./index.html">Steve Tran</a></h1>
-            <nav>
-                <!--Unordered list elements-->
-                <ul>
-                    <!--List item elements-->
-                    <li>
-                        <a href="#about-me">About Me</a>   
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>   
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a>   
-                    </li>
-                    <li>
-                        <a href="./resume.html">Resume</a>   
-                    </li>                    
-                </ul>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steve Tran - Creative Designer Based In US</title>
 
-         <!-- hero/jumbotron -->
-         <section class="hero">        
-            <img class="image2" src="./assets/images/profile-pic.jpg" alt="profile"/>
-            <div>
-                <h2>Full Stack Developer</h2>
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="./index.html" class="logo">Steve Tran</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link" data-nav-link
+                >Portfolio</a
+              >
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+            <li>
+              <a href="./resume.html" class="navbar-link" data-nav-link>Resume</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <figure
+              class="hero-banner img-holder has-before"
+              style="--width: 640; --height: 840"
+            >
+              <img
+                src="./assets/images/hero-banner.jpg"
+                width="640"
+                height="840"
+                alt="Steve Tran"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="hero-content">
+              <p class="section-subtitle">Steve Tran</p>
+
+              <h1 class="h1 hero-title">Creative Designer Based In US</h1>
+
+              <ul class="hero-list">
+                <li>
+                  <a href="#" class="list-link">
+                    <span class="span">Fullstack Developer</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="list-link">
+                    <span class="span">Digital Marketing</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="list-link">
+                    <span class="span">Graphic Design</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="exp-list">
+                <li class="list-item">
+                  <strong class="strong">5+</strong>
+
+                  <span class="span">
+                    Years of<br />
+                    Experience
+                  </span>
+                </li>
+
+              <a
+                href="#portfolio"
+                class="slide-down-btn"
+                aria-label="scroll down"
+              >
+                <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
+              </a>
             </div>
+          </div>
         </section>
 
-         <!-- About section -->
-         <section id="about-me" class="about">
-            <div class="flex-row">
-              <h2 class="section-title">About</h2> 
-            </div>
-            <div class="step-info">
-                <div class="vl-border1">
-            </div>
-                <div class="step-text">
-                    <p>
-                        My name is Steve Tran. I live in Atlanta, Georgia. I am a big foodie and love to travel.</br> I am currently pursuing a Bachelor in Psychology as well as attending Georgia Tech Full Stack bootcamp.
+        <!-- 
+        - #PORTFOLIO
+      -->
 
-                    </p>
-                </div>
-         </section>
+        <section
+          class="section portfolio"
+          id="portfolio"
+          aria-label="portfolio"
+        >
+          <div class="container">
+            <p class="section-subtitle">Portfolio</p>
 
-         <!-- Work section -->
-        <section id="work" class="about">
-            <div class="flex-row ">
-              <h2 class="section-title">Works</h2> 
-            </div>
-            <div class="step-info">
-                <div class="vl-border2">
+            <h2 class="h2 section-title">Selected Works</h2>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-1.png"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Weather-Wear"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <h3 class="h3 card-title">Weather Wear</h3>
+
+                    <p class="card-text">Javascript, CSS, HTML</p>
+                  </a>
                 </div>
-                <!--CSS grid of images-->
-                <div class="container">
-                   <div class="gallery">  
-                    <figure class="gallery__item gallery__item--1">
-                        <a href="https://stran0430.github.io/prework-study-guide/">
-                          <img src="./assets/images/screenshot-prework.png" class="gallery__img" alt="prework-study-guide">
-                          <figcaption>Prework Study Guide</br>Git HTML CSS</figcaption>
-                        </a>
-                    </figure>                     
-                    <figure class="gallery__item gallery__item--2">
-                        <a href="https://stran0430.github.io/Refactor-challenge-1/">
-                            <img src="./assets/images/screenshot-challenge-1.png" class="gallery__img" alt="Horiseon website">
-                            <figcaption>Horiseon</br>HTML CSS</figcaption>               
-                        </a>
-                        </figure>
-                        <figure class="gallery__item gallery__item--3">
-                            <a href="https://zellyb.github.io/Weather-Wear/">
-                                <img src="./assets/images/sc1.png" class="gallery__img" alt="Weather Wear">
-                                <figcaption>Weather Wear</br>Java</figcaption>  
-                            </a>
-                        </figure>
-                    </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-2.png"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Bona Green"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <h3 class="h3 card-title">Horiseon</h3>
+
+                    <p class="card-text">HTML, CSS</p>
+                  </a>
                 </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-3.png"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Prework Study Guide"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <h3 class="h3 card-title">Prework Study Guide</h3>
+
+                    <p class="card-text">Git, HTML, CSS</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-4.png"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Password Generator"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <h3 class="h3 card-title">Password Generator</h3>
+
+                    <p class="card-text">Javascript, CSS, HTML</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-5.png"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Workday Scheduler"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <h3 class="h3 card-title">Workday Scheduler</h3>
+
+                    <p class="card-text">Javascript</p>
+                  </a>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 600; --height: 675"
+                  >
+                    <img
+                      src="./assets/images/portfolio-6.png"
+                      width="600"
+                      height="675"
+                      loading="lazy"
+                      alt="Coding Quiz"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <h3 class="h3 card-title">Coding Quiz</h3>
+
+                    <p class="card-text">Javascript</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #SKILLS
+      -->
+
+        <section
+          class="section skills has-before"
+          id="skills"
+          aria-label="skills"
+          style="background-image: url('./assets/images/skills-bg.png')"
+        >
+          <div class="container">
+            <div class="skills-content">
+              <p class="section-subtitle">Skills</p>
+
+              <h2 class="h2 section-title">Programming Skills</h2>
+
+              <p class="section-text">
+                I have been accomplishing enough with modern Web Development, new generation web and app
+                programming language.
+              </p>
+
+              <ul class="skills-list">
+                <li class="skills-item">
+                  <div class="wrapper">
+                    <h3 class="skill-title">HTML & CSS</h3>
+
+                    <data class="skill-value" value="95%">95%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress" style="width: 95%"></div>
+                  </div>
+                </li>
+
+                <li class="skills-item">
+                  <div class="wrapper">
+                    <h3 class="skill-title">JavaScript</h3>
+
+                    <data class="skill-value" value="80%">80%</data>
+                  </div>
+
+                  <div class="progress-box">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-         </section>
-               <!-- Contact me section -->
-               <section id="contact-me" class="about">
-                <div class="flex-row">
-                    <h2 class="section-title">Contact</h2> 
-                </div>
-            <div class="step-info">
-                <div class="vl-border3">
-                </div>
-                <div class="contact-info">
-                <ul>
-                    <!--List item elements-->
-                    <li>
-                        <a href="#number">678-111-1111</a>   
-                    </li>
-                    <li>
-                        <a href="#website.com">stevetran@website.com</a>   
-                    </li>
-                    <li>
-                        <a href="#githb">GitHub</a>   
-                    </li>                  
-                </ul>
-                </div>
-            </section>        
-</body>
+            <div class="skills-banner has-before"></div>
+          </div>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="section contact" id="contact" aria-label="contact">
+          <div class="container">
+            <div class="contact-content">
+              <p class="section-subtitle">Contact</p>
+
+              <h2 class="h2 section-title">Get In Touch</h2>
+
+              <p class="section-text">
+                Please fill out the form on this section to contact with me.
+              </p>
+
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <ion-icon
+                    name="location-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+
+                  <address class="contact-link">Atlanta, Georgia</address>
+                </li>
+
+                <li class="contact-item">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                  <a href="mailto:stran0430@gmail.com" class="contact-link"
+                    >stran0430@gmail.com</a
+                  >
+                </li>
+
+                <li class="contact-item">
+                  <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+
+                  <a href="https://stran0430.github.io/Portfolio/" class="contact-link"
+                    >https://stran0430.github.io/Portfolio/</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <form action="" class="contact-form">
+              <input
+                type="text"
+                name="name"
+                aria-label="name"
+                placeholder="Name"
+                required
+                class="input-field"
+              />
+
+              <input
+                type="email"
+                name="email_address"
+                aria-label="email"
+                placeholder="Email"
+                required
+                class="input-field"
+              />
+
+              <textarea
+                name="message"
+                aria-label="message"
+                placeholder="Message"
+                required
+                class="input-field"
+              ></textarea>
+
+              <button type="submit" class="submit-btn">
+                <span class="span">Submit</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2022. All rights reserved by
+          <a href="#" class="copyright-link">stran0430</a>
+        </p>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
