@@ -3,7 +3,11 @@
 
 To create a portfolio of work that showcase my skills and talents to employers looking to fill a part-time or full-time position. My portfolio will high my strongest work as well as my thought process behind it. My projects are deployed web applications.
 
- ![](./assets/images/screenshot-portfolio.png)
+<img width="1427" alt="scwebsite" src="https://user-images.githubusercontent.com/115510413/213753327-ef9bd7b5-d5e6-44d6-990f-f66710f8d88c.png">
+<img width="1413" alt="scportfolio2" src="https://user-images.githubusercontent.com/115510413/213753316-05929d5a-e8bf-4a1b-94a2-5285baab75b9.png">
+<img width="1431" alt="scresume" src="https://user-images.githubusercontent.com/115510413/213753325-e2a073ca-41f2-4c7f-9c7e-ad0d6577b104.png">
+
+ 
  
 ### Acceptance Criteria:
 
